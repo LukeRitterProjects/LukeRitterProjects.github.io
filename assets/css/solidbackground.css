@@ -595,46 +595,7 @@ input, select, textarea {
 				top: 0;
 				width: 13em;
 			}
-
-				#header nav li:nth-child(1) {
-					
-				}
-
-				#header nav li:nth-child(2) {
-					
-				}
-
-				#header nav li:nth-child(3) {
-					
-				}
-
-				#header nav li:nth-child(4) {
-					
-				}
-
-				#header nav li:nth-child(5) {
-					
-				}
-
-				#header nav li:nth-child(6) {
-					
-				}
-
-				#header nav li:nth-child(7) {
-					
-				}
-
-				#header nav li:nth-child(8) {
-					
-				}
-
-				#header nav li:nth-child(9) {
-					
-				}
-
-				#header nav li:nth-child(10) {
-					
-				}
+		
 
 			#header nav a {
                 -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
