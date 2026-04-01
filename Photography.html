@@ -35,45 +35,89 @@
 
 					</header>
 
-    <main>
-        <h1>Photography</h1>
-        <p>Click or tap an image to open the full file (replace filenames with yours).</p>
+	<main>
+		<style>
+			.gallery { display:grid; grid-template-columns: repeat(2, 1fr); gap:12px;}
+			.gallery figure { margin:8px; padding:0; flex:1 1 220px; max-width:1000px; }
+			.gallery img { width:100%; height:auto; display:grid; border-radius:4px; }
+			.gallery img:hover { transform: scale(1.02); }
+			.gallery figcaption { font-size:0.9rem; margin-top:0.25rem; color:#000000; }
 
-        <div class="gallery">
-            <figure>
-                <a href="assets/css/images/tonto1.jpg" target="_blank" rel="noopener">
-                    <img src="assets/css/images/tonto1.jpg" alt="Photo 1">
-                </a>
-                <figcaption>Photo 1 — brief caption</figcaption>
-            </figure>
+			   /* Responsive: 2 per row on smaller screens */
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
 
-            <figure>
-                <a href="assets/css/images/tonto2.jpg" target="_blank" rel="noopener">
-                    <img src="assets/css/images/tonto2.jpg" alt="Photo 2">
-                </a>
-                <figcaption>Photo 2 — brief caption</figcaption>
-            </figure>
+	/* Responsive: 1 per row on very small screens */
+	@media (max-width: 480px) {
+	  .gallery {
+		grid-template-columns: 1fr;
+	  }
+	}
 
-            <figure>
-                <a href="assets/css/images/boyscoutcnyn.jpg" target="_blank" rel="noopener">
-                    <img src="assets/css/images/boyscoutcnyn.jpg" alt="Photo 3">
-                </a>
-                <figcaption>Photo 3 — brief caption</figcaption>
-            </figure>
+		</style>
 
-            <!-- add more figure blocks as needed -->
-        </div>
-    </main>
-				
-			
+		<h1>Photography</h1>
+		<p>Click or tap an image to open the full file (replace filenames with yours).</p>
 
+		<div class="gallery">
+			<figure>
+				<a href="assets/css/images/tonto1.jpg" target="_blank" rel="noopener">
+					<img src="assets/css/images/tonto1.jpg" alt="Photo 1" loading="lazy">
+				</a>
+				<figcaption>this is tonto bridge</figcaption>
+			</figure>
+
+			<figure>
+				<a href="assets/css/images/tonto2.jpg" target="_blank" rel="noopener">
+					<img src="assets/css/images/tonto2.jpg" alt="Photo 2" loading="lazy">
+				</a>
+				<figcaption>Photo 2 — brief caption</figcaption>
+			</figure>
+
+			<figure>
+				<a href="assets/css/images/boyscoutcnyn.jpg" target="_blank" rel="noopener">
+					<img src="assets/css/images/boyscoutcnyn.jpg" alt="Photo 3" loading="lazy">
+				</a>
+				<figcaption>Photo 3 — brief caption</figcaption>
+			</figure>
+
+			<!-- second row -->
+			<figure>
+				<a href="assets/css/images/rock.jpg" target="_blank" rel="noopener">
+					<img src="assets/css/images/rock.jpg" alt="Photo 4" loading="lazy">
+				</a>
+				<figcaption>Photo 4 — brief caption</figcaption>
+			</figure>
+
+			<figure>
+				<a href="assets/css/images/zion.jpg" target="_blank" rel="noopener">
+					<img src="assets/css/images/zion.jpg" alt="Photo 5" loading="lazy">
+				</a>
+				<figcaption>Photo 5 — brief caption</figcaption>
+			</figure>
+
+			<figure>
+				<a href="assets/css/images/jeep.jpg" target="_blank" rel="noopener">
+					<img src="assets/css/images/jeep.jpg" alt="Photo 6" loading="lazy">
+				</a>
+				<figcaption>Photo 6 — brief caption</figcaption>
+			</figure>
+
+
+			<!-- add more figure blocks as needed -->
+		</div>
+	</main>
 
 			</div>
 		</div>
 		<script>
 			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
+			// allow touch scrolling on mobile devices
+			window.ontouchmove = null;
+			window.onorientationchange = function() { window.scrollTo(0,0); }
 		</script>
 	</body>
 </html>
