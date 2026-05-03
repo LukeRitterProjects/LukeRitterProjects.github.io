@@ -10,7 +10,7 @@
 		</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/solidbackground.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -24,8 +24,8 @@
 						<h1></h1>
 						<nav class="navbar">
 							<ul>
-								<li><a href="index.html">About</a></li>
-								<li><a href="Writing">Writing</a></li>
+								<li><a href="index.html">About Me</a></li>
+								<li><a href="Writing.html">Writing</a></li>
 								<li><a href="Photography.html">Photography</a></li>
 								<li><a href="Other projects.html">Other projects</a></li>
 								<li><a href="Contact.html">Contact</a></li>
@@ -36,8 +36,88 @@
 					</header>
 
 	<main>
-		<h1>This will be a future blog updates page with contact info and basic details</h1>
-		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, saepe sapiente? A corrupti officia quas perspiciatis officiis quis aut soluta, sed doloribus illo nam aperiam vel consequuntur error iusto id.</p>
+		<style>
+			.gallery {
+				display: grid;
+				grid-template-columns: repeat(3, minmax(0, 1fr));
+				gap: 15px 15px;
+				justify-items: center;
+				max-width: 640px;
+				margin: 0 auto;
+			}
+			.gallery figure {
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				max-width: 300px;
+			}
+			.gallery img {
+				width: 100%;
+				height: auto;
+				display: block;
+				border-radius: 4px;
+			}
+			.gallery img:hover {
+				transform: scale(1.02);
+			}
+			.gallery figcaption {
+				font-size: 0.9rem;
+				margin-top: 0.25rem;
+				color: #ffffff;
+			}
+
+			/* Responsive: 2 per row on smaller screens */
+			@media (max-width: 768px) {
+				.gallery {
+					grid-template-columns: repeat(2, minmax(0, 1fr));
+				}
+			}
+
+			/* Responsive: 1 per row on very small screens */
+			@media (max-width: 480px) {
+				.gallery {
+					grid-template-columns: 1fr;
+				}
+			}
+
+		</style>
+		
+		<span style='font-weight: 600;'>Welcome! Here you'll find my Bio, CV, and work samples. On other pages, you'll find personal projects, interests, and creative endeavors.</span>
+		<br>
+		<br>
+		<p>I'm a forester, outdoor educator, and social scientist working in Flagstaff, Arizona. I received my Master's in Forestry in 2025 from Northern Arizona University, then published my research on human-technology interaction in natural resources. I taught throughout graduate school and now am involved in various teaching, stewardship, and educational programs.</p>
+		<br>
+		<br>
+	
+
+		<div class="gallery">
+			<figure>
+				<a href="assets/css/images/Profile pic.png" target="_blank" rel="noopener">
+					<img src="assets/css/images/Profile pic.png" alt="Photo 1" loading="lazy">
+				</a>
+				<figcaption>Socials</figcaption>
+			</figure>
+
+			<figure>
+				<a href="assets/css/images/CVlink.jpg" target="_blank" rel="noopener">
+					<img src="assets/css/images/CVlink.jpg" alt="Photo 2" loading="lazy">
+				</a>
+				<figcaption>Curriculum Vitae</figcaption>
+			</figure>
+
+			<figure>
+				<a href="assets/css/images/CVlink - Copy.jpg" target="_blank" rel="noopener">
+					<img src="assets/css/images/CVlink - Copy.jpg" alt="Photo 2" loading="lazy">
+				</a>
+				<figcaption>other work samples??</figcaption>
+			</figure>
+
+			
+
+			
+		</div>
+
+
 	</main>
 				
 			
