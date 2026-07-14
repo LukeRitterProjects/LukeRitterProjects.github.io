@@ -308,7 +308,7 @@ input, select, textarea {
 	}
 
 	#bg {
-		background-size: 2250px auto;
+		background-size: 2250px 100vh;
 		width: 6750px;
 	}
 
@@ -746,7 +746,7 @@ input, select, textarea {
 		}
 
 		#bg {
-			background-size: 1500px auto;
+			background-size: 1500px 100vh;
 			width: 4500px;
 		} }
 
@@ -828,7 +828,7 @@ input, select, textarea {
 		}
 
 		#bg {
-			background-size: 750px auto;
+			background-size: 750px 100vh;
 			width: 2250px;
 		} }
 
@@ -914,7 +914,7 @@ input, select, textarea {
 		}
 
 		#bg {
-			background-size: 300px auto;
+			background-size: 300px 100vh;
 			width: 900px;
 		}
 
@@ -1012,7 +1012,7 @@ input, select, textarea {
 		}
 
 		#bg {
-			background-size: 412.5px auto;
+			background-size: 412.5px 100vh;
 			width: 1237.5px;
 		}
 
