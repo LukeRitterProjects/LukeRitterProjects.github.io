@@ -25,8 +25,8 @@
 						<nav class="navbar">
 							<ul>
 								<li><a href="index.html">About Me</a></li>
-								<li><a href="Writing.html">Writing</a></li>
 								<li><a href="Photography.html">Photography</a></li>
+								<li><a href="Writing.html">Writing</a></li>
 								<li><a href="Other projects.html">Other projects</a></li>
 								<li><a href="Contact.html">Contact</a></li>
 								
@@ -60,8 +60,13 @@
 			.gallery img:hover {
 				transform: scale(1.02);
 			}
+			.gallery img.no-hover:hover {
+				transform: none !important;
+			}
+
+			
 			.gallery figcaption {
-				font-size: 0.9rem;
+				font-size: 1.05rem;
 				margin-top: 0.25rem;
 				color: #ffffff;
 			}
@@ -82,35 +87,38 @@
 
 		</style>
 		
-		<span style='font-weight: 600;'>Welcome! Here you'll find my Bio, CV, and work samples. On other pages, you'll find personal projects, interests, and creative endeavors.</span>
+		<span style='font-weight: 600;'>Who I Am</span>
 		<br>
 		<br>
-		<p>I'm a forester, outdoor educator, and social scientist working in Flagstaff, Arizona. I received my Master's in Forestry in 2025 from Northern Arizona University, then published my research on human-technology interaction in natural resources. I taught throughout graduate school and now am involved in various teaching, stewardship, and educational programs.</p>
+		<p>I'm a forester, outdoor educator, and social scientist working in Flagstaff, Arizona. I grew up exploring the high deserts and spring-fed rivers of central AZ before pursuing a career in natural resources. I'm passionate about acquiring new skills to frame my understanding of the world and inform my passion for science communication. In my free time, I enjoy luthiery, writing music, mountain biking, and film photography.</p>
 		<br>
 		<br>
 	
 
+
 		<div class="gallery">
 			<figure>
 				<a href="assets/css/images/Profile pic.png" target="_blank" rel="noopener">
-					<img src="assets/css/images/Profile pic.png" alt="Photo 1" loading="lazy">
+					<img class="no-hover" src="assets/css/images/Profile pic.png" alt="Photo 1" loading="lazy">
 				</a>
-				<figcaption>Socials</figcaption>
+				<figcaption></figcaption>
 			</figure>
 
 			<figure>
-				<a href="assets/css/images/CVlink.jpg" target="_blank" rel="noopener">
-					<img src="assets/css/images/CVlink.jpg" alt="Photo 2" loading="lazy">
+				<a href="https://www.linkedin.com/in/luke-ritter-2b5996204/" target="_blank" rel="noopener">
+					<img src="assets/css/images/LinkedIn_logo.jpg" alt="Photo 2" loading="lazy">
 				</a>
-				<figcaption>Curriculum Vitae</figcaption>
+				<figcaption>LinkedIn</figcaption>
 			</figure>
 
 			<figure>
-				<a href="assets/css/images/CVlink - Copy.jpg" target="_blank" rel="noopener">
-					<img src="assets/css/images/CVlink - Copy.jpg" alt="Photo 2" loading="lazy">
+				<a href="Ritter_CV.pdf" target="_blank" rel="noopener">
+					<img src="assets/css/images/CV_thumbnail.jpg" alt="Photo 2" loading="lazy">
 				</a>
-				<figcaption>other work samples??</figcaption>
+				<figcaption>Curriculum Vitae (.pdf link)</figcaption>
 			</figure>
+
+			
 
 			
 
