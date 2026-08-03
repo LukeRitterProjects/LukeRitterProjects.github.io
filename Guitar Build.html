@@ -37,13 +37,99 @@
 
 
 
-
 <main>
-		<h1>testtesttest</h1>
-		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, saepe sapiente? A corrupti officia quas perspiciatis officiis quis aut soluta, sed doloribus illo nam aperiam vel consequuntur error iusto id.</p>
+		<h1 style="font-weight: bold;">Travel Guitar (2026)</h1>
+		<p>This project was my first attempt at building any sort of acoustic instrument. I purposefully chose to design this guitar without looking at other designs, aside from a Crimson Guitars project that I remember seeing a few years ago. That's why the neck joint is odd and certain steps in the process were poorly done. The final product sounds good- but is far from perfect. Lots of lessons to apply next time.</p>
+		<br>
 	</main>
 				
 			
+	<style>
+		.gallery {
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+			gap: 12px;
+			/* center the grid content and items */
+			justify-content: center;
+			justify-items: center;
+			max-width: 1100px;
+			margin: 0 auto;
+		}
+		.gallery figure {
+			margin: 8px auto;
+			padding: 0;
+			max-width: 500px;
+			width: 100%;
+		}
+		.gallery img {
+			width: 100%;
+			height: auto;
+			display: block;
+			border-radius: 4px;
+			transition: transform 150ms ease;
+		}
+		.gallery img:hover { transform: scale(1.01); }
+		.gallery figcaption { font-size: 0.9rem; margin-top: 0.25rem; color: #ffffff; }
+
+		/* Responsive: keep single column on narrower screens */
+		@media (max-width: 768px) {
+			.gallery { grid-template-columns: repeat(1, 1fr); }
+		}
+
+		/* Responsive: 1 per row on very small screens */
+		@media (max-width: 480px) {
+			.gallery { grid-template-columns: 1fr; }
+		}
+
+	</style>
+
+		<div class="gallery">
+			<figure>
+				<a href="assets/css/images/guitar/guitar1.jpg" target="_blank" rel="noopener">
+					<img src="assets/css/images/guitar/guitar1.jpg" alt="Photo 1" loading="lazy">
+				</a>
+				<figcaption>Travel sized, fretless, nylon string guitar constructed with a spruce soundboard, mahogany neck and blocks, and rosewood back, sides, and fingerboard.</figcaption>
+			</figure>
+
+			<figure>
+				<a href="assets/css/images/guitar/guitar2.jpg" target="_blank" rel="noopener">
+					<img src="assets/css/images/guitar/guitar2.jpg" alt="Photo 1" loading="lazy">
+				</a>
+				<figcaption></figcaption>
+			</figure>
+
+			<figure>
+				<a href="assets/css/images/guitar/guitar3.jpg" target="_blank" rel="noopener">
+					<img src="assets/css/images/guitar/guitar3.jpg" alt="Photo 1" loading="lazy">
+				</a>
+				<figcaption>Before gluing on the soundboard.</figcaption>
+			</figure>
+
+			<figure>
+				<a href="assets/css/images/guitar/guitar4.jpg" target="_blank" rel="noopener">
+					<img src="assets/css/images/guitar/guitar4.jpg" alt="Photo 1" loading="lazy">
+				</a>
+				<figcaption>Checking for neck joint fitment early on in the build process.</figcaption>
+			</figure>
+
+			<figure>
+				<a href="assets/css/images/guitar/guitar5.jpg" target="_blank" rel="noopener">
+					<img src="assets/css/images/guitar/guitar5.jpg" alt="Photo 1" loading="lazy">
+				</a>
+				<figcaption>Rough version of the rosewood bridge with saddle installed.</figcaption>
+			</figure>
+
+			<figure>
+				<a href="assets/css/images/guitar/guitar6.jpg" target="_blank" rel="noopener">
+					<img src="assets/css/images/guitar/guitar6.jpg" alt="Photo 1" loading="lazy">
+				</a>
+				<figcaption>Early version of the mortise and tenon neck to body joint.</figcaption>
+			</figure>
+
+			
+
+
+
 
 
 			</div>
